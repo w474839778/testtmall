@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="http://how2j.cn/study/js/jquery/2.0.0/jquery.min.js"></script>
+<link href="http://how2j.cn/study/css/bootstrap/3.3.6/bootstrap.min.css" rel="stylesheet">
+<script src="http://how2j.cn/study/js/bootstrap/3.3.6/bootstrap.min.js"></script>
+</head>
+
+<style>
+/*整个body*/
+body{
+	/*把所有文字的大小调成12px,这是天猫默认的文字大小*/
+	font-size:12px;
+	/*字库使用Arial*/
+	font-family:Arial;
+	
+}
+
+/*所有超链*/
+a{
+	color:#999;
+	/*所有的超链，都以灰色#999形式表现*/
+}
+
+/*天猫红*/
+.redColor{
+	color:#C40000 ！important;
+}
+
+/*置顶导航nav*/
+nav.top{
+	/*背景色 上内边距  下内边距   下边缘有一个像素的实线边框，颜色#e7e7e7*/
+	background-color:#f2f2f2;
+	padding-top:5px;
+	padding-bottom:5px;
+	border-bottom:1px solid #e7e7e7;
+}
+
+/*置顶导航里的span和超链*/
+nav.top span, nav.top a{
+	/*左右外边距10px  没有上下外边距*/
+	color:#999;
+	margin:0px 10px 0px 10px;
+}
+
+/*超链悬停*/
+nav.top a:hover{
+	color:#C40000;
+	text-decoration:none;
+	/*去掉下划线*/
+}
+</style>
+
+<body>
+	<nav class="top">
+		<a href="#nowhere">
+			<span class="glyphicon glyphicon-home redColor"></span>
+			天猫首页
+		</a>
+		
+		<span>喵，欢迎来天猫</span>
+			<a href="#nowhere">请登录</a>
+			<a href="#nowhere">免费注册</a>
+			
+		<span class="pull-right">
+			<a href="forebought">我的订单</a>
+			<a href="forecart">
+			<span class="glyphicon glyphicon-shopping-cart redColor"></span>
+			购物车<strong>0</strong>件</a>
+		</span>
+	</nav>
+</body>
+</html>

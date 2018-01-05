@@ -1,0 +1,62 @@
+		<!-- 
+			需要添加带有该标记的代码  即基于class的开发
+			通过 data 属性：使用 data 属性可以很容易控制轮播（Carousel）的位置。
+	
+	    	属性 data-slide 接受关键字 prev 或 next，用来改变幻灯片相对于当前位置的位置。
+	
+	 		   使用 data-slide-to 来向轮播床底一个原始滑动索引，data-slide-to="2" 将把滑块移动到一个特定的索引，索引从 0 开始计数。
+			data-target: #和id值     
+	   		 data-ride="carousel" 属性用于标记轮播在页面加载时就开始动画播放
+	   		 class="carousel-of-product carousel slide"
+	   		 id="carousel-of-product"    随便取个id
+	   		  .item 内的 .carousel-caption 元素向幻灯片添加标题
+	   		  
+	   		  <ol class="carousel-indicators"><div role="listbox" class="carousel-inner">    
+	   		  两个class的属性值为固定文字，一个用在ol/ul内作为轮播指标,一个用在div内作为轮播项目  即一个负责控制  一个负责显示
+	   		  html5中的;role是表示元素扮演的角色
+	   		  <div class="item active">  class的属性值为item  表示为轮播项的文件  
+	   		   <div class="carousel-caption">标题 3</div>   创建标题
+	   		  
+	   		  
+	   		   active为当前项
+	   		  
+	   		  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+	   		  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a></div>
+	   		  底下按钮控制
+	   		  
+	   		  data-ride="carousel"  属性用于标记轮播在页面加载时就开始动画播放
+	   		  class="carousel slide" 
+	   		  id        id随便取
+	   		  ol    class="carousel-indicators"   创建图片移动的光标 class值固定  意为轮播指标
+	   		  class="active"  当里面有值且为active时    移动光标为该项
+	   		  data-slide-to="0" 来向轮播床底一个原始滑动索引，data-slide-to="2" 将把滑块移动到一个特定的索引，索引从 0 开始计数。
+	   		  data-target="#carousel-of-product"   属性值为#加id  作用 用于指向被控制的模态框
+	   		  html5中的;role是表示元素扮演的角色
+	   		  class="carousel-inner"  属性值为固定值   作为轮播项   意为被控制轮播
+	   		  <div class="item active">  class的属性值为item  表示为轮播项的文件  
+	   		   <div class="carousel-caption">标题 3</div>   创建标题
+	   		   data-interval="1000"  轮播时间间隔  没有不自动轮播（需要手动点击）
+	   		  
+	   		  tr  表示一行
+	   		  td  表示一个格子（列）
+	   		  th  表示一个格子（列）   格子内 内容加粗
+	   		  
+	   		  	<!--background-repeat	规定如何重复背景图像  background-position	规定背景图像的位置  background-attachment	规定背景图像是否固定或者随着页面的其余部分滚动-->
+absolute	
+生成绝对定位的元素，相对于 static 定位以外的第一个父元素进行定位。
+
+元素的位置通过 "left", "top", "right" 以及 "bottom" 属性进行规定。
+
+fixed	
+生成绝对定位的元素，相对于浏览器窗口进行定位。
+
+元素的位置通过 "left", "top", "right" 以及 "bottom" 属性进行规定。
+
+relative	
+生成相对定位的元素，相对于其正常位置进行定位。
+
+因此，"left:20" 会向元素的 LEFT 位置添加 20 像素。
+
+static	默认值。没有定位，元素出现在正常的流中（忽略 top, bottom, left, right 或者 z-index 声明）。
+inherit	规定应该从父元素继承 position 属性的值。
+	-->
